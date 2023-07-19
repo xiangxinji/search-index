@@ -1,12 +1,32 @@
 {
     "stars": [
         {
-            "linkName": "百度",
-            "linkUrl": "http://www.baidu.com"
+            "linkName": "RGB颜色转换工具",
+            "linkUrl": "https://www.bejson.com/convert/rgbhex/"
         },
         {
-            "linkName": "百度2",
-            "linkUrl": "http://www.baidu.com"
+            "linkName": "Vuejs",
+            "linkUrl": "https://cn.vuejs.org/"
+        },
+        {
+            "linkName": "Reactjs",
+            "linkUrl": "https://react.docschina.org/"
+        },
+        {
+            "linkName": "在线图床",
+            "linkUrl": "https://www.imgtp.com/"
+        },
+        {
+            "linkName": "Tarojs",
+            "linkUrl": "https://taro.jd.com/"
+        },
+        {
+            "linkName": "Webpack",
+            "linkUrl": "https://www.webpackjs.com/"
+        },
+        {
+            "linkName": "Vite",
+            "linkUrl": "https://cn.vitejs.dev/"
         }
     ]
 }
