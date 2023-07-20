@@ -27,6 +27,10 @@
         {
             "linkName": "Vite",
             "linkUrl": "https://cn.vitejs.dev/"
+        },
+        {
+            "linkName": "Element-Plus",
+            "linkUrl": "https://element-plus.gitee.io/"
         }
     ]
 }
