@@ -5,6 +5,10 @@
             "linkUrl": "https://www.bejson.com/convert/rgbhex/"
         },
         {
+            "linkName" : "图片压缩",
+            "linkUrl" : "https://yasuo.xunjiepdf.com/img/"
+        },
+        {
             "linkName": "Vuejs",
             "linkUrl": "https://cn.vuejs.org/"
         },
