@@ -35,6 +35,10 @@
         {
             "linkName": "Element-Plus",
             "linkUrl": "https://element-plus.gitee.io/"
+        },
+        {
+            "linkName" : "Dora AI 网页生成工具" , 
+            "linkUrl" : "https://www.dora.run/ai"
         }
     ]
 }
