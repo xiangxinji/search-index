@@ -39,6 +39,10 @@
         {
             "linkName" : "Dora AI 网页生成工具" , 
             "linkUrl" : "https://www.dora.run/ai"
+        },
+        {
+            "linkName" : "JS/CSS 压缩",
+            "linkUrl" : "https://tool.css-js.com/"
         }
     ]
 }
