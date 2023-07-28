@@ -47,6 +47,10 @@
         {
             "linkName" : "微信公众平台",
             "linkUrl" : "https://mp.weixin.qq.com/"
+        },
+        {
+            "linkName" : "VxeTable" , 
+            "linkUrl" : "https://vxetable.cn/v4/"
         }
     ]
 }
