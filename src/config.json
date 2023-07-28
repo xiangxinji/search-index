@@ -43,6 +43,10 @@
         {
             "linkName" : "JS/CSS 压缩",
             "linkUrl" : "https://tool.css-js.com/"
+        },
+        {
+            "linkName" : "微信公众平台",
+            "linkUrl" : "https://mp.weixin.qq.com/"
         }
     ]
 }
