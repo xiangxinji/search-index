@@ -1,4 +1,15 @@
 {
+    "swipers" : [
+        {
+            "background" : "https://w.wallhaven.cc/full/p9/wallhaven-p9yp3e.jpg"
+        },
+        {
+            "background" : "https://w.wallhaven.cc/full/3l/wallhaven-3l6l53.jpg"
+        },
+        {
+            "background" : "https://w.wallhaven.cc/full/kx/wallhaven-kx91ym.jpg"
+        }
+    ],
     "stars": [
         {
             "linkName": "RGB颜色转换工具",

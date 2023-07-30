@@ -29,29 +29,25 @@ const handleClick = (st: { linkUrl: string }) => {
     padding-right: 10px;
     display: flex;
     flex-wrap: wrap;
+    z-index: 3;
 }
 
 .star-item {
     height: 40px;
-    background-color: rgba(255,255,255,.7);
     margin-bottom: 20px;
     min-width: 100px;
     border-radius: 20px;
-    padding: 0 10px;
-    margin-right: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 3px 3px 8px rgba(0,0,0,.5);
     transition: all .1s ease;
+    color:white;
+    text-shadow: 1px 3px 10px rgba(0,0,0,.5);
 }
 
-.star-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 3px 13px 12px rgba(0,0,0,.5);
-}
+
 
 .star-item .star-item-link-logo {
     width: 70px;

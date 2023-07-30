@@ -128,6 +128,7 @@ const currentType = computed(() => {
     display: flex;
     align-items: center;
     padding-left: 10px;
+    z-index: 3;
 }
 
 .search-input input {
