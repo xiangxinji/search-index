@@ -55,7 +55,6 @@ const handleClick = (st: { linkUrl: string }) => {
 .star-item {
     height: 40px;
     margin-bottom: 20px;
-    min-width: 100px;
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -64,7 +63,7 @@ const handleClick = (st: { linkUrl: string }) => {
     color: white;
     text-align: left;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, .9);
-    padding-right: 10px;
+    padding-right: 20px;
 }
 
 

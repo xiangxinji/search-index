@@ -122,7 +122,7 @@ const currentType = computed(() => {
     height: 50px;
     min-width: 800px;
     box-shadow: 3px 3px 8px rgba(0,0,0,.5);
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: #fff;
     border: solid 1px #efefef;
     display: flex;

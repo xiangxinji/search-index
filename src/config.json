@@ -1,4 +1,5 @@
-{
+{   
+    "source_rep" : "https://github.com/xiangxinji/search-index/blob/main/src/config.json",
     "swipers": [
         {
             "background": "https://w.wallhaven.cc/full/p9/wallhaven-p9yp3e.jpg"
@@ -65,7 +66,12 @@
                 {
                     "linkName": "VxeTable",
                     "linkUrl": "https://vxetable.cn/v4/"
+                },
+                {
+                    "linkName": "IconFont",
+                    "linkUrl": "https://www.iconfont.cn/"
                 }
+
             ]
         },
         {
@@ -74,6 +80,10 @@
                 {
                     "linkName": "壁纸网站",
                     "linkUrl": "https://wallhaven.cc/"
+                },
+                {
+                    "linkName" : "颜色渐变配色" , 
+                    "linkUrl" : "https://webkul.github.io/coolhue/"
                 }
             ]
         }
