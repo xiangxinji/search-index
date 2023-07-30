@@ -70,8 +70,11 @@
                 {
                     "linkName": "IconFont",
                     "linkUrl": "https://www.iconfont.cn/"
+                },
+                {
+                    "linkName" : "Aencap 工具库",
+                    "linkUrl" : "https://www.npmjs.com/package/@binary-star/aencap"
                 }
-
             ]
         },
         {
