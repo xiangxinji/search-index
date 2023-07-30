@@ -16,6 +16,10 @@
             "linkUrl": "https://www.bejson.com/convert/rgbhex/"
         },
         {
+            "linkName" : "图片压缩",
+            "linkUrl" : "https://yasuo.xunjiepdf.com/img/"
+        },
+        {
             "linkName": "Vuejs",
             "linkUrl": "https://cn.vuejs.org/"
         },
@@ -38,6 +42,26 @@
         {
             "linkName": "Vite",
             "linkUrl": "https://cn.vitejs.dev/"
+        },
+        {
+            "linkName": "Element-Plus",
+            "linkUrl": "https://element-plus.gitee.io/"
+        },
+        {
+            "linkName" : "Dora AI 网页生成工具" , 
+            "linkUrl" : "https://www.dora.run/ai"
+        },
+        {
+            "linkName" : "JS/CSS 压缩",
+            "linkUrl" : "https://tool.css-js.com/"
+        },
+        {
+            "linkName" : "微信公众平台",
+            "linkUrl" : "https://mp.weixin.qq.com/"
+        },
+        {
+            "linkName" : "VxeTable" , 
+            "linkUrl" : "https://vxetable.cn/v4/"
         }
     ]
 }
