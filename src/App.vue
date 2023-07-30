@@ -22,7 +22,7 @@ import Stars from './components/stars/main.vue'
 
 .stars {
   position: absolute;
-  top:300px;
+  top:350px;
   left: 10%;
 }
 </style>

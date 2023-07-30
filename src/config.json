@@ -1,67 +1,81 @@
 {
-    "swipers" : [
+    "swipers": [
         {
-            "background" : "https://w.wallhaven.cc/full/p9/wallhaven-p9yp3e.jpg"
+            "background": "https://w.wallhaven.cc/full/p9/wallhaven-p9yp3e.jpg"
         },
         {
-            "background" : "https://w.wallhaven.cc/full/3l/wallhaven-3l6l53.jpg"
+            "background": "https://w.wallhaven.cc/full/3l/wallhaven-3l6l53.jpg"
         },
         {
-            "background" : "https://w.wallhaven.cc/full/kx/wallhaven-kx91ym.jpg"
+            "background": "https://w.wallhaven.cc/full/kx/wallhaven-kx91ym.jpg"
         }
     ],
     "stars": [
         {
-            "linkName": "RGB颜色转换工具",
-            "linkUrl": "https://www.bejson.com/convert/rgbhex/"
+            "groupName": "工作",
+            "children": [
+                {
+                    "linkName": "RGB颜色转换工具",
+                    "linkUrl": "https://www.bejson.com/convert/rgbhex/"
+                },
+                {
+                    "linkName": "图片压缩",
+                    "linkUrl": "https://yasuo.xunjiepdf.com/img/"
+                },
+                {
+                    "linkName": "Vuejs",
+                    "linkUrl": "https://cn.vuejs.org/"
+                },
+                {
+                    "linkName": "Reactjs",
+                    "linkUrl": "https://react.docschina.org/"
+                },
+                {
+                    "linkName": "在线图床",
+                    "linkUrl": "https://www.imgtp.com/"
+                },
+                {
+                    "linkName": "Tarojs",
+                    "linkUrl": "https://taro.jd.com/"
+                },
+                {
+                    "linkName": "Webpack",
+                    "linkUrl": "https://www.webpackjs.com/"
+                },
+                {
+                    "linkName": "Vite",
+                    "linkUrl": "https://cn.vitejs.dev/"
+                },
+                {
+                    "linkName": "Element-Plus",
+                    "linkUrl": "https://element-plus.gitee.io/"
+                },
+                {
+                    "linkName": "Dora AI 网页生成工具",
+                    "linkUrl": "https://www.dora.run/ai"
+                },
+                {
+                    "linkName": "JS/CSS 压缩",
+                    "linkUrl": "https://tool.css-js.com/"
+                },
+                {
+                    "linkName": "微信公众平台",
+                    "linkUrl": "https://mp.weixin.qq.com/"
+                },
+                {
+                    "linkName": "VxeTable",
+                    "linkUrl": "https://vxetable.cn/v4/"
+                }
+            ]
         },
         {
-            "linkName" : "图片压缩",
-            "linkUrl" : "https://yasuo.xunjiepdf.com/img/"
-        },
-        {
-            "linkName": "Vuejs",
-            "linkUrl": "https://cn.vuejs.org/"
-        },
-        {
-            "linkName": "Reactjs",
-            "linkUrl": "https://react.docschina.org/"
-        },
-        {
-            "linkName": "在线图床",
-            "linkUrl": "https://www.imgtp.com/"
-        },
-        {
-            "linkName": "Tarojs",
-            "linkUrl": "https://taro.jd.com/"
-        },
-        {
-            "linkName": "Webpack",
-            "linkUrl": "https://www.webpackjs.com/"
-        },
-        {
-            "linkName": "Vite",
-            "linkUrl": "https://cn.vitejs.dev/"
-        },
-        {
-            "linkName": "Element-Plus",
-            "linkUrl": "https://element-plus.gitee.io/"
-        },
-        {
-            "linkName" : "Dora AI 网页生成工具" , 
-            "linkUrl" : "https://www.dora.run/ai"
-        },
-        {
-            "linkName" : "JS/CSS 压缩",
-            "linkUrl" : "https://tool.css-js.com/"
-        },
-        {
-            "linkName" : "微信公众平台",
-            "linkUrl" : "https://mp.weixin.qq.com/"
-        },
-        {
-            "linkName" : "VxeTable" , 
-            "linkUrl" : "https://vxetable.cn/v4/"
+            "groupName": "平常",
+            "children": [
+                {
+                    "linkName": "壁纸网站",
+                    "linkUrl": "https://wallhaven.cc/"
+                }
+            ]
         }
     ]
 }
