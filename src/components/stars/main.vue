@@ -44,7 +44,8 @@ const handleClick = (st: { linkUrl: string }) => {
     justify-content: center;
     transition: all .1s ease;
     color:white;
-    text-shadow: 1px 3px 10px rgba(0,0,0,.5);
+    text-shadow: 3px 3px 10px rgba(0,0,0,.9);
+    padding-right: 10px;
 }
 
 
