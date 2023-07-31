@@ -78,6 +78,10 @@
                 {
                     "linkName" : "Aencap 工具库",
                     "linkUrl" : "https://www.npmjs.com/package/@binary-star/aencap"
+                },
+                {
+                    "linkName" : "QuillEditor 编辑器",
+                    "linkUrl" : "https://quilljs.com/"
                 }
             ]
         },
