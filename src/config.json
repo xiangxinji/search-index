@@ -82,6 +82,10 @@
                 {
                     "linkName" : "QuillEditor 编辑器",
                     "linkUrl" : "https://quilljs.com/"
+                },
+                {
+                    "linkName" : "MicroApp" , 
+                    "linkUrl" : "https://micro-zoe.com/docs/1.x/#/zh-cn/start"
                 }
             ]
         },
