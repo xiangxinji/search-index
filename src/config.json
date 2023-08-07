@@ -86,6 +86,10 @@
                 {
                     "linkName" : "MicroApp" , 
                     "linkUrl" : "https://micro-zoe.com/docs/1.x/#/zh-cn/start"
+                },
+                {
+                    "linkName" : "VueUse" , 
+                    "linkUrl" : "http://www.vueusejs.com/"
                 }
             ]
         },
