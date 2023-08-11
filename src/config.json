@@ -90,6 +90,10 @@
                 {
                     "linkName" : "VueUse" , 
                     "linkUrl" : "http://www.vueusejs.com/"
+                },
+                {
+                    "linkName" : "Sevlte" , 
+                    "linkUrl" : "https://www.svelte.cn/"
                 }
             ]
         },
