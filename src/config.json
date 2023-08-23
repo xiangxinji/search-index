@@ -98,6 +98,10 @@
                 {
                     "linkName" : "Sevlte" , 
                     "linkUrl" : "https://www.svelte.cn/"
+                },
+                {
+                    "linkName" : "Million" ,
+                    "linkUrl: "https://million.dev/"
                 }
             ]
         },
