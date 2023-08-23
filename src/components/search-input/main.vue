@@ -9,15 +9,16 @@
                 </div>
             </Transition>
         </div>
-        <input type="text" placeholder="输入你的关键词" v-model="state.searchInput" @keyup.enter="handleSubmit">
+        <input type="text" placeholder="输入你的关键词" v-model="state.searchInput" @keyup.enter="handleSubmit" ref="inputRef"
+            @keydown="handleKeydown">
     </div>
 </template>
 
 
 <script setup lang="ts">
-import { computed, reactive } from 'vue';
+import { computed, reactive, ref } from 'vue';
 const searchType = window.sessionStorage.getItem('searchType') || 'bing'
-
+const inputRef = ref(null as any)
 const TYPES = [
     {
         label: '必应',
@@ -80,7 +81,22 @@ const currentType = computed(() => {
 })
 
 
+const handleKeydown = (e: KeyboardEvent) => {
+    if (e.keyCode === 38 || e.keyCode === 40) {
+        const ind = TYPES.findIndex(i => i.value === state.searchType)
+        let next = e.keyCode === 38 ? ind - 1 : ind + 1
+        if (next < 0) next = TYPES.length - 1
+        if (next > TYPES.length - 1) next = 0
+        changeSearchType(TYPES[next].value)
+    }
 
+}
+
+defineExpose({
+    focus: () => {
+        inputRef.value.focus()
+    }
+})
 </script>
 
 
@@ -121,7 +137,7 @@ const currentType = computed(() => {
     width: 30%;
     height: 50px;
     min-width: 800px;
-    box-shadow: 3px 3px 8px rgba(0,0,0,.5);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
     border-radius: 10px;
     background-color: #fff;
     border: solid 1px #efefef;
