@@ -67,7 +67,7 @@ onMounted(() => {
 }
 
 .todo-input {
-    height: 42px;
+    height: 36px;
     display: flex;
     align-items: center;
     padding: 13px 20px;

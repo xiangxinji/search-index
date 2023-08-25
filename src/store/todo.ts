@@ -14,7 +14,7 @@ export const useStore = defineStore("todo", {
     // 创建todo
     createTodoTask(todo: TodoItem & { id?: string }) {
       todo.id = getIdent();
-      this.todoList.push(todo as TodoItem);
+      this.todoList.unshift(todo as TodoItem);
     },
     // 删除todo
     removeTodoTask(id: string) {
@@ -32,4 +32,5 @@ export const useStore = defineStore("todo", {
       }
     },
   },
+  persist: true,
 });

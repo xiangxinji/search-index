@@ -6,7 +6,7 @@
             {{ data.title }}
         </div>
         <div class="todo-item__status" @click="handlers.changeStatus">
-            {{ getStatusLabel(data.status) }} 
+            {{ getStatusLabel(data.status) }}
         </div>
     </div>
 </template>
@@ -41,24 +41,32 @@ const wrapperClass = computed(() => {
 </script>
 <style scoped>
 .todo-item {
-    height: 40px;
-    background-image: linear-gradient(135deg, #C2FFD8 10%, #465EFB 100%);
+    height: 32px;
+    background-color: #ffffff;
+    border:solid 1px #2396b6;
     border-radius: 8px;
-    line-height: 40px;
+    line-height: 32px;
     padding: 0 8px;
     display: flex;
     margin-bottom: 10px;
     justify-content: space-between;
 }
 
+.todo-item.todo-item--done .todo-item__title{
+    text-decoration: line-through;
+}
+
 .todo-item .todo-item__title {
     font-weight: bold;
     font-size: 14px;
+    color:#2396b6;
     cursor: pointer;
+
+    
 }
 
 .todo-item .todo-item__status {
-    color: white;
+    color: #2396b6;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
