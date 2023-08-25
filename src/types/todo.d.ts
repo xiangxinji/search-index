@@ -8,4 +8,6 @@ export type TodoItem = {
   content: string;
   // 状态
   status: TodoItemStatus;
+  // 创建时间
+  createTime: number;
 };

@@ -1,20 +1,26 @@
 import { defineStore } from "pinia";
 import { TodoItem, TodoItemStatus } from "../types/todo";
-import { createIdentScope } from "../utils/ident";
+import config from '../config.json'
 
-const { getIdent } = createIdentScope("todo");
+
+const { todo: todoConfig } = config.modules
 
 export const useStore = defineStore("todo", {
   state: () => {
     return {
+      lastId: 0,
       todoList: [] as TodoItem[],
     };
   },
   actions: {
     // 创建todo
     createTodoTask(todo: TodoItem & { id?: string }) {
-      todo.id = getIdent();
+      todo.id = `todo-${this.lastId + 1}`
+      this.lastId++;
       this.todoList.unshift(todo as TodoItem);
+      if (this.todoList.length > todoConfig.maxStorageLength) {
+        this.todoList.pop()
+      }
     },
     // 删除todo
     removeTodoTask(id: string) {
@@ -31,6 +37,15 @@ export const useStore = defineStore("todo", {
         todo.status = status;
       }
     },
+    // 过滤掉所有已完成的todo
+    filterDoneTodo() {
+      this.todoList = this.todoList.filter((todo) => todo.status !== "done");
+    }
   },
-  persist: true,
+  persist: {
+    // 再恢复数据之后， 过滤掉所有已完成的todo
+    afterRestore(ctx) {
+      ctx.store.filterDoneTodo();
+    }
+  },
 });

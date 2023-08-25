@@ -8,8 +8,9 @@
             </TodoItemVue>
         </div>
 
-        <div class="todo-input">
-            <input ref="inputRef" v-model="state.title" type="text" @keyup.enter="handlers.addTodo">
+        <div :class="{ 'todo-input': true, focusing: state.focusing }">
+            <input placeholder="请输入你的代办标题" ref="inputRef" v-model="state.title" type="text" @keyup.enter="handlers.addTodo"
+                @focus="handlers.focus" @blur="handlers.blur">
         </div>
 
     </section>
@@ -27,7 +28,8 @@ const todoStore = useStore()
 const inputRef = ref<HTMLInputElement | null>(null)
 
 const state = reactive({
-    title: ''
+    title: '',
+    focusing: false
 })
 
 const showTodoList = computed(() => {
@@ -37,6 +39,7 @@ const showTodoList = computed(() => {
 
 const handlers = {
     addTodo: () => {
+        if (!state.title || !state.title.trim()) return
         const todo = createTodo(state.title)
         todoStore.createTodoTask(todo)
         state.title = ''
@@ -44,12 +47,20 @@ const handlers = {
     nextStatus(id: string, status: TodoItemStatus) {
         const ns = nextStatus(status)
         todoStore.setTodoItemStatus(id, ns as unknown as TodoItemStatus)
+    },
+    focus() {
+        state.focusing = true
+    },
+    blur() {
+        state.focusing = false
     }
 }
 
 
 onMounted(() => {
-    inputRef.value?.focus()
+    setTimeout(() => {
+        inputRef.value?.focus()
+    }, 400)
 })
 
 </script>
@@ -64,24 +75,30 @@ onMounted(() => {
 .todo-container {
     flex: 1;
     padding: 20px;
+    overflow: auto;
 }
 
 .todo-input {
     height: 36px;
     display: flex;
     align-items: center;
-    padding: 13px 20px;
+    padding: 20px;
     align-items: center;
+}
+
+.todo-input.focusing input {
+    border-color: #0ceba1;
 }
 
 .todo-input input {
     width: 100%;
     height: 100%;
-    border: none;
+    border: solid 1px transparent;
     outline: none;
     font-size: 14px;
     color: #333;
     border-radius: 8px;
     padding-left: 10px;
+    transition: border-color .5s ease-in-out;
 }
 </style>

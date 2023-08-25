@@ -5,6 +5,7 @@ export function createTodo(title: string, content?: string) {
     title,
     content,
     status: "doing",
+    createTime: Date.now(),
   } as TodoItem;
 }
 
@@ -24,7 +25,7 @@ export function statusLabel(status: TodoItemStatus) {
     done: "已完成",
   };
 
-  
+
 
   return labels[status];
 }
