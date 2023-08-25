@@ -7,7 +7,7 @@
                     <!-- <div class="star-item-link-logo"> -->
                     <!-- <img :src="star.logo" alt=""> -->
                     <!-- </div> -->
-                    <div class="star-item-link-name">
+                    <div class="star-item-link-name" :title="star.description">
                         {{ star.linkName }}
                     </div>
                 </div>
@@ -22,7 +22,7 @@ const stars = config.stars;
 
 
 function getChildren(group: any) {
-    return group.children as { linkName: string, linkUrl: string }[]
+    return group.children as { linkName: string, linkUrl: string, description?: string }[]
 }
 
 
@@ -43,12 +43,13 @@ const handleClick = (st: { linkUrl: string }) => {
     z-index: 3;
 }
 
-.star-group-item{
-    width:100%;
+.star-group-item {
+    width: 100%;
 }
-.group-content{
+
+.group-content {
     display: flex;
-    padding: 10px 0 ;
+    padding: 10px 0;
     flex-wrap: wrap;
 }
 

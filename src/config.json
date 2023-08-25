@@ -1,122 +1,127 @@
-{   
-    "source_rep" : "https://github.com/xiangxinji/search-index/blob/main/src/config.json",
-    "swipers": [
+{
+  "source_rep": "https://github.com/xiangxinji/search-index/blob/main/src/config.json",
+  "swipers": [
+    {
+      "background": "https://w.wallhaven.cc/full/p9/wallhaven-p9yp3e.jpg"
+    },
+    {
+      "background": "https://w.wallhaven.cc/full/ex/wallhaven-exwgv8.jpg"
+    },
+    {
+      "background": "https://w.wallhaven.cc/full/kx/wallhaven-kx2vw1.jpg"
+    }
+  ],
+  "stars": [
+    {
+      "groupName": "工作",
+      "children": [
         {
-            "background": "https://w.wallhaven.cc/full/p9/wallhaven-p9yp3e.jpg"
+          "linkName": "RGB颜色转换工具",
+          "linkUrl": "https://www.bejson.com/convert/rgbhex/"
         },
         {
-            "background" : "https://w.wallhaven.cc/full/ex/wallhaven-exwgv8.jpg"
+          "linkName": "图片压缩",
+          "linkUrl": "https://yasuo.xunjiepdf.com/img/"
         },
         {
-            "background" : "https://w.wallhaven.cc/full/kx/wallhaven-kx2vw1.jpg"
+          "linkName": "Vuejs",
+          "linkUrl": "https://cn.vuejs.org/"
+        },
+        {
+          "linkName": "Reactjs",
+          "linkUrl": "https://react.docschina.org/"
+        },
+        {
+          "linkName": "在线图床",
+          "linkUrl": "https://www.imgtp.com/"
+        },
+        {
+          "linkName": "Base64 解码",
+          "linkUrl": "https://www.xuhuhu.com/base64-decode.html"
+        },
+        {
+          "linkName": "Tarojs",
+          "linkUrl": "https://taro.jd.com/"
+        },
+        {
+          "linkName": "Webpack",
+          "linkUrl": "https://www.webpackjs.com/"
+        },
+        {
+          "linkName": "Vite",
+          "linkUrl": "https://cn.vitejs.dev/"
+        },
+        {
+          "linkName": "Element-Plus",
+          "linkUrl": "https://element-plus.gitee.io/"
+        },
+        {
+          "linkName": "Naive-UI",
+          "linkUrl": "https://www.naiveui.com/"
+        },
+        {
+          "linkName": "Dora AI 网页生成工具",
+          "linkUrl": "https://www.dora.run/ai"
+        },
+        {
+          "linkName": "JS/CSS 压缩",
+          "linkUrl": "https://tool.css-js.com/"
+        },
+        {
+          "linkName": "微信公众平台",
+          "linkUrl": "https://mp.weixin.qq.com/"
+        },
+        {
+          "linkName": "VxeTable",
+          "linkUrl": "https://vxetable.cn/v4/"
+        },
+        {
+          "linkName": "IconFont",
+          "linkUrl": "https://www.iconfont.cn/"
+        },
+        {
+          "linkName": "Aencap 工具库",
+          "linkUrl": "https://www.npmjs.com/package/@binary-star/aencap"
+        },
+        {
+          "linkName": "QuillEditor 编辑器",
+          "linkUrl": "https://quilljs.com/"
+        },
+        {
+          "linkName": "MicroApp",
+          "linkUrl": "https://micro-zoe.com/docs/1.x/#/zh-cn/start"
+        },
+        {
+          "linkName": "VueUse",
+          "linkUrl": "http://www.vueusejs.com/"
+        },
+        {
+          "linkName": "Sevlte",
+          "linkUrl": "https://www.svelte.cn/"
+        },
+        {
+          "linkName": "Million",
+          "linkUrl": "https://million.dev/"
+        },
+        {
+          "linkName": "Pinia",
+          "linkUrl": "https://pinia.web3doc.top/",
+          "description": "Vue3 状态管理库"
         }
-    ],
-    "stars": [
+      ]
+    },
+    {
+      "groupName": "平常",
+      "children": [
         {
-            "groupName": "工作",
-            "children": [
-                {
-                    "linkName": "RGB颜色转换工具",
-                    "linkUrl": "https://www.bejson.com/convert/rgbhex/"
-                },
-                {
-                    "linkName": "图片压缩",
-                    "linkUrl": "https://yasuo.xunjiepdf.com/img/"
-                },
-                {
-                    "linkName": "Vuejs",
-                    "linkUrl": "https://cn.vuejs.org/"
-                },
-                {
-                    "linkName": "Reactjs",
-                    "linkUrl": "https://react.docschina.org/"
-                },
-                {
-                    "linkName": "在线图床",
-                    "linkUrl": "https://www.imgtp.com/"
-                },
-                {
-                    "linkName" : "Base64 解码",
-                    "linkUrl" : "https://www.xuhuhu.com/base64-decode.html"
-                },
-                {
-                    "linkName": "Tarojs",
-                    "linkUrl": "https://taro.jd.com/"
-                },
-                {
-                    "linkName": "Webpack",
-                    "linkUrl": "https://www.webpackjs.com/"
-                },
-                {
-                    "linkName": "Vite",
-                    "linkUrl": "https://cn.vitejs.dev/"
-                },
-                {
-                    "linkName": "Element-Plus",
-                    "linkUrl": "https://element-plus.gitee.io/"
-                },
-                {
-                    "linkName": "Naive-UI",
-                    "linkUrl": "https://www.naiveui.com/"
-                },
-                {
-                    "linkName": "Dora AI 网页生成工具",
-                    "linkUrl": "https://www.dora.run/ai"
-                },
-                {
-                    "linkName": "JS/CSS 压缩",
-                    "linkUrl": "https://tool.css-js.com/"
-                },
-                {
-                    "linkName": "微信公众平台",
-                    "linkUrl": "https://mp.weixin.qq.com/"
-                },
-                {
-                    "linkName": "VxeTable",
-                    "linkUrl": "https://vxetable.cn/v4/"
-                },
-                {
-                    "linkName": "IconFont",
-                    "linkUrl": "https://www.iconfont.cn/"
-                },
-                {
-                    "linkName" : "Aencap 工具库",
-                    "linkUrl" : "https://www.npmjs.com/package/@binary-star/aencap"
-                },
-                {
-                    "linkName" : "QuillEditor 编辑器",
-                    "linkUrl" : "https://quilljs.com/"
-                },
-                {
-                    "linkName" : "MicroApp" , 
-                    "linkUrl" : "https://micro-zoe.com/docs/1.x/#/zh-cn/start"
-                },
-                {
-                    "linkName" : "VueUse" , 
-                    "linkUrl" : "http://www.vueusejs.com/"
-                },
-                {
-                    "linkName" : "Sevlte" , 
-                    "linkUrl" : "https://www.svelte.cn/"
-                },
-                {
-                    "linkName" : "Million" ,
-                    "linkUrl" : "https://million.dev/"
-                }
-            ]
+          "linkName": "壁纸网站",
+          "linkUrl": "https://wallhaven.cc/"
         },
         {
-            "groupName": "平常",
-            "children": [
-                {
-                    "linkName": "壁纸网站",
-                    "linkUrl": "https://wallhaven.cc/"
-                },
-                {
-                    "linkName" : "颜色渐变配色" , 
-                    "linkUrl" : "https://webkul.github.io/coolhue/"
-                }
-            ]
+          "linkName": "颜色渐变配色",
+          "linkUrl": "https://webkul.github.io/coolhue/"
         }
-    ]
+      ]
+    }
+  ]
 }
