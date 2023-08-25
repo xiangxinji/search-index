@@ -4,7 +4,8 @@
     <section class="si-module module-todo">
 
         <div class="todo-container">
-            <TodoItemVue v-for="data in showTodoList" :data="data"></TodoItemVue>
+            <TodoItemVue v-for="data in showTodoList" :data="data" @change-status="handlers.nextStatus" :key="data.id">
+            </TodoItemVue>
         </div>
 
         <div class="todo-input">
@@ -20,7 +21,8 @@ import { computed, onMounted, reactive, ref } from 'vue'
 import TodoItemVue from './todo-item.vue';
 
 import { useStore } from '../../../store/todo'
-import { createTodo } from '../../../utils/todo'
+import { createTodo, nextStatus } from '../../../utils/todo'
+import { TodoItemStatus } from '../../../types/todo';
 const todoStore = useStore()
 const inputRef = ref<HTMLInputElement | null>(null)
 
@@ -32,13 +34,19 @@ const showTodoList = computed(() => {
     return todoStore.todoList
 })
 
+
 const handlers = {
     addTodo: () => {
         const todo = createTodo(state.title)
         todoStore.createTodoTask(todo)
         state.title = ''
+    },
+    nextStatus(id: string, status: TodoItemStatus) {
+        const ns = nextStatus(status)
+        todoStore.setTodoItemStatus(id, ns as unknown as TodoItemStatus)
     }
 }
+
 
 onMounted(() => {
     inputRef.value?.focus()
@@ -55,7 +63,7 @@ onMounted(() => {
 
 .todo-container {
     flex: 1;
-    padding:20px;
+    padding: 20px;
 }
 
 .todo-input {
