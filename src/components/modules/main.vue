@@ -48,14 +48,13 @@ const state = reactive({
 const handlers = {
     active: (module: string) => {
         state.visible = !state.visible
-
         if (!state.visible) {
             state.currentModule = ''
             return
         }
         setTimeout(() => {
             state.currentModule = module
-        }, 1000)
+        }, 400)
         state.renderKey++;
     }
 }
