@@ -6,7 +6,10 @@
     },
     "milestone": {
       "events": [
-     
+         {
+           "event_name" : "测试" , 
+           "event_date"  : "0000"
+          }
       ]
     }
   },
