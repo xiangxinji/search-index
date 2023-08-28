@@ -8,7 +8,8 @@
       "events": [
          {
            "event_name" : "测试" , 
-           "event_date"  : "0000"
+           "event_date"  : "0000",
+           "link" : "0000"
           }
       ]
     }
