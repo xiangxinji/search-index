@@ -1,6 +1,6 @@
 
 <template>
-    <div class="search-input">
+    <div :class="{ 'search-input': true, focus: state.isFocus }">
         <div class="search-type">
             <span class="search-type-trigger" @click="changeSearchTypeVisble">{{ currentType }}</span>
             <Transition name="selector">
@@ -9,8 +9,8 @@
                 </div>
             </Transition>
         </div>
-        <input type="text" placeholder="输入你的关键词" v-model="state.searchInput" @keyup.enter="handleSubmit" ref="inputRef"
-            @keydown="handleKeydown">
+        <input @focus="handleFocus" @blur="handleBlur" type="text" placeholder="输入你的关键词" v-model="state.searchInput"
+            @keyup.enter="handleSubmit" ref="inputRef" @keydown="handleKeydown">
     </div>
 </template>
 
@@ -53,9 +53,17 @@ const TYPES = [
 const state = reactive({
     searchInput: '',
     searchType: searchType,
-    searchTypeSelect: false
+    searchTypeSelect: false,
+    isFocus: false
 })
 
+
+const handleFocus = () => {
+    state.isFocus = true
+}
+const handleBlur = () => {
+    state.isFocus = false
+}
 const handleSubmit = () => {
     const item = TYPES.find(t => t.value === state.searchType)
     if (!item) return
@@ -101,6 +109,8 @@ defineExpose({
 
 
 <style scoped>
+
+
 .search-type-item:hover {
     background-color: #efefef;
     cursor: pointer;
@@ -137,7 +147,6 @@ defineExpose({
     width: 30%;
     height: 50px;
     min-width: 800px;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
     border-radius: 10px;
     background-color: #fff;
     border: solid 1px #efefef;
@@ -145,6 +154,12 @@ defineExpose({
     align-items: center;
     padding-left: 10px;
     z-index: 3;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .2);
+    transition: all .3s ease-in-out;
+}
+
+.search-input.focus {
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, .5);
 }
 
 .search-input input {
