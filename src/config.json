@@ -133,6 +133,10 @@
         {
           "linkName": "Three.js",
           "linkUrl": "http://www.webgl3d.cn/"
+        },
+        {
+          "linkName": "TypeChat",
+          "linkUrl": "https://microsoft.github.io/TypeChat/"
         }
       ]
     },
