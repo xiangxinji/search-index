@@ -125,6 +125,10 @@
           "linkName": "Pinia",
           "linkUrl": "https://pinia.web3doc.top/",
           "description": "Vue3 状态管理库"
+        },
+        {
+          "linkName": "JSDoc",
+          "linkUrl": "https://jsdoc.bootcss.com/"
         }
       ]
     },
