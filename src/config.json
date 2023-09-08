@@ -129,6 +129,10 @@
         {
           "linkName": "JSDoc",
           "linkUrl": "https://jsdoc.bootcss.com/"
+        },
+        {
+          "linkName": "Three.js",
+          "linkUrl": "http://www.webgl3d.cn/"
         }
       ]
     },
